@@ -19,6 +19,12 @@ MIT
 ngx-bootstrap/utils
 MIT
 
+ngx-flip
+MIT
+
+ngx-flip-card
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
