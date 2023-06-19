@@ -1,0 +1,120 @@
+<style>
+  @font-face {
+  font-family: homepagefont;
+    src:url("https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk.woff2")
+  }
+  @font-face {
+  font-family: "My Font Name";
+  src: url("../../assets/Fonts/chomsky/Chomsky.otf") format("truetype");
+}
+</style>
+
+<div class="">
+  <mdb-carousel [interval]="2500" [wrap]="true" >
+    <mdb-carousel-item>
+      <img style="height: 50vh;"
+        [src]="images[0]"
+        class="d-block w-100"
+        alt="..."
+      />
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <img style="height: 50vh;"
+        [src]='images[1]'
+        class="d-block w-100"
+        alt="..."
+      />
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <img style="height: 50vh;"
+      [src]='images[2]'
+        class="d-block w-100"
+        alt="..."
+      />
+    </mdb-carousel-item>
+    <!-- <mdb-carousel-item style="text-align: center;">
+      <img style="background-color: rgba(255, 255, 255, 0);max-height: 50vh;max-width: 50vh;"
+      [src]='images[3]'
+        class="d-block w-100"
+        alt="..."
+      />
+    </mdb-carousel-item> -->
+  </mdb-carousel>
+
+  <div class="container-fluid text-bg-danger text-capitalize text-break" style="height:fit-content;padding:10px;text-align:center; background-color: blanchedalmond;font-size: large;font-family:'Times New Roman', Times, serif;font-size: larger;font-weight: 1000;">
+    Job done with perfection and dedication gives more satisfaction<br>
+    <i style="margin-left: 30%;">- J.L. Bubber</i>
+  </div>
+
+    <!-- Highlight Card -->
+    <div class="container-fluid" style="padding: 40px;" >
+      <table class="table table-responsive">
+         <tr [ngClass]="windowWidth<670?'row row-cols-1 center text-center':'row-cols-2'" class=""  style="padding: 0;">
+          <td [style]="windowWidth<670?'text-align:center':'text-align: right;'">
+            <img class="img-fluid" width="5000px" src="../../../assets/homepage/medicine-block.png"/>
+          </td>
+      <td style="text-align: left;">
+        <span class="img-fluid" style="font-family: Raleway;font-size:30px;line-height: 2rem;"><b >At Bubbersons India, we are committed to improving the health and well-being of people around the world.</b><br> We believe that everyone deserves access to safe and effective treatments, and we work tirelessly to develop new medications that can address the most pressing medical needs of our time.</span>
+<!-- Our team of scientists, researchers, and medical professionals is dedicated to advancing the frontiers of medicine, seeking out new insights and breakthroughs that can lead to better health outcomes for patients. We understand that the development of new drugs is a complex and challenging process, but we are undaunted by the obstacles that we may face.
+We believe that our work is more than just a business - it is a calling. We are driven by a sense of purpose that goes beyond profit, and we are guided by a set of values that reflect our commitment to ethical and responsible practices. We believe in transparency, honesty, and accountability, and we strive to uphold these principles in all of our interactions.
+As we move forward in our mission, we are excited about the possibilities that lie ahead. We know that there are many challenges that we will need to overcome, but we are confident that with perseverance, dedication, and a willingness to collaborate, we can make a real difference in the lives of people around the world. -->
+      </td></tr>
+    </table>
+    </div>
+
+<!-- Ranking Card -->
+<div class="container" style="padding: 40px;" >
+  <table class="table table-responsive">
+    <tr class="row-cols-3">
+      <td class="col-1" >
+        <i class="fa fa-users bg-danger" style="border-radius: 50%;"></i>
+      </td>
+      <td class="col-1">
+        <i class="fa fa-users bg-danger" style="border-radius: 50%;"></i>
+      </td>
+      <td class="col-1">
+        <i class="fa fa-linkedin  bg-danger" style="border-radius: 50%;"></i>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="container-fluid">
+  <table class="table-responsive-lg">
+    <tr class="row-cols-1 ">
+      <td class="col-2"><div style="height: 20vw;background-color: red;" >Hello</div> </td>
+      <td class="col-2"><div style="height: 20vw;background-color: black;" >Hello</div> </td>
+    </tr>
+  </table>
+</div>
+<div class="container-fluid text-center">
+  <h1 style="font-family: Raleway;font-weight: bolder;">Awards & Recognition</h1>
+  <table class="table table-responsive text-center">
+    <tr class="row-cols-2">
+      <td class="col-2">
+        <img class="img-fluid img-thumbnail awardsImg" [src]="awards[0]" >
+      </td>
+      <td class="col-2">
+        <img class="img-fluid img-thumbnail awardsImg" [src]="awards[1]" >
+      </td>
+    </tr>
+    <tr class="row-cols-2">
+      <td class="col-2">
+        <img class="img-fluid img-thumbnail awardsImg" [src]="awards[2]" >
+      </td>
+      <td class="col-2">
+        <img class="img-fluid img-thumbnail awardsImg" [src]="awards[3]" >
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div style="text-align: center;position:relative;background-color: rgba(219, 225, 230, 0.058);padding: 5%;">
+  <h1 style="font-family: My Font Name;font-weight: bolder;">News Insights</h1>
+  <div class="box white col-5" style="background-color: rgba(127, 120, 120, 0.27);"></div>
+  <div class="box red col-4" style="text-align: center;font-size: 1.5rem;vertical-align: middle;"><span id='newsBox' class="fade" ></span></div>
+</div>
+<div class="container fillPagediv " style=" align-items: center;align-content: center;text-align: center;">
+  <h1 style="padding: 10px;color: #1a19198e;text-shadow: 1px 1px white;" class="heading text-center  mb-4"> Our Network of Growth</h1>
+  <img [style]="windowWidth<670?'max-width:90%':'max-width:100%'" src="https://static.vecteezy.com/system/resources/thumbnails/012/707/489/large/hand-drawn-of-india-3d-map-png.png"/>
+</div>
+</div>

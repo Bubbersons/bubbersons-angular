@@ -6,6 +6,7 @@
 *.PNG
 *.png
 *.CR2
+*.webp
 
 # Compiled output
 /dist
@@ -13,6 +14,7 @@
 /tmp
 /out-tsc
 /bazel-out
+/js
 
 # Node
 /node_modules
@@ -21,12 +23,14 @@ yarn-error.log
 
 # IDEs and editors
 .idea/
+.vscode/
 .project
 .classpath
 .c9/
 *.launch
 .settings/
 *.sublime-workspace
+.editorconfig
 
 # Visual Studio Code
 .vscode/*

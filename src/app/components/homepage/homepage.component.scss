@@ -1,0 +1,131 @@
+@keyframes fade {
+  0% {
+    filter:blur(15px);
+    opacity:0;
+  }
+  40% {
+    filter:blur(0px);
+    opacity:1;
+  }
+  50% {
+    filter:blur(0px);
+    opacity:1;
+  }
+  70% {
+    filter:blur(0px);
+    opacity:1;
+  }
+  100% {
+    filter:blur(10px);
+    opacity:0;
+  }
+}
+
+.fade {
+  animation: fade 5s infinite ;
+}
+
+
+
+.fillPagediv{
+  width: 100%;
+  height: 100vh;
+  background-size:  cover;
+}
+
+.column img {
+  margin: 8px;
+  min-width: 10vw;
+
+}
+.column img:nth-child(1) {
+  background: url(https://cdn.pixabay.com/photo/2015/06/02/12/59/narrative-794978_960_720.jpg);
+}
+.column img:nth-child(2) {
+  background: url(https://cdn.pixabay.com/photo/2015/06/02/12/59/narrative-794978_960_720.jpg);
+}
+.column img:nth-child(3) {
+  background: url(https://cdn.pixabay.com/photo/2016/09/08/22/43/books-1655783_960_720.jpg);
+}
+.column img:nth-child(4) {
+  background: url(https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581_960_720.jpg);
+}
+.column img:nth-child(5) {
+  background: url(https://cdn.pixabay.com/photo/2014/05/03/00/46/notebook-336634_960_720.jpg);
+}
+.column img:nth-child(6) {
+  background: url(https://cdn.pixabay.com/photo/2014/05/03/00/46/notebook-336634_960_720.jpg);
+}
+.column img:nth-child(7) {
+  background: url(https://cdn.pixabay.com/photo/2014/05/03/00/46/notebook-336634_960_720.jpg);
+}
+.column img:nth-child(0) {
+  background: url(https://cdn.pixabay.com/photo/2014/05/03/00/46/notebook-336634_960_720.jpg);
+}
+
+@media screen and (max-width: 650px) {
+  .container{
+    // font-size:1rem;
+  }
+}
+@media screen and (min-width: 651px) {
+  .container{
+    // font-size: 2rem;
+  }
+}
+.box{
+  padding: 10px;
+  opacity: 0.9;
+  height: 450px;
+  /* position: absolute; */
+}
+.red{
+  background: #ff0000;
+  z-index: 2;
+  /* width: 20%; */
+  height: 300px;
+  top: 30%;
+  margin-left: 40%;
+  position: absolute;
+}
+.white{
+  background: white;
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: 20%
+
+}
+.awardsImg{
+  border-radius: 40px;
+  border-color: rgba(0, 0, 0, 0.357);
+  box-shadow: 2px 2px 2px black;
+}
+// //////
+$brand-blue: #282A36;
+
+body, html {
+  height: 100%;
+}
+
+.wrap {
+  height: 100%;
+  position: relative;
+}
+
+#network {
+  height: 100%;
+  background: $brand-blue;
+}
+
+.node-info {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: 10;
+  width: 200px;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
